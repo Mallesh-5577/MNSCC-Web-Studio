@@ -1,0 +1,29 @@
+{
+  "overview": "A modern, high-conversion portfolio website for a fresher web design startup. Built with glassmorphic dark theme, neon accents, and smooth animations to impress potential clients and convert them into paying customers.",
+  "features": [
+    "Sticky glassmorphic navbar with smooth scroll navigation",
+    "Animated hero section with dual CTAs",
+    "About section with trust-building messaging",
+    "Tech stack & tools showcase with hover animations",
+    "Website types catalogue with icons and descriptions",
+    "Portfolio section with 3-6 demo project cards",
+    "Why Choose Us section with 5 benefit cards",
+    "Testimonials section",
+    "Contact form with WhatsApp and Email CTAs",
+    "Responsive footer with social links",
+    "Loading animation and hover effects throughout",
+    "Fully responsive (mobile + desktop)"
+  ],
+  "category": "portfolio",
+  "tags": [
+    "portfolio",
+    "web-design",
+    "startup",
+    "glassmorphism",
+    "dark-theme",
+    "landing-page",
+    "conversion",
+    "animations"
+  ],
+  "last_updated": "2026-04-10T02:57:03.167Z"
+}
