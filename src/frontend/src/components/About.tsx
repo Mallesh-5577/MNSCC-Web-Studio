@@ -98,9 +98,9 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.12 }}
-              className="glass-card mt-6 relative overflow-hidden border border-yellow-500/25"
+              className="glass-card mt-6 relative overflow-hidden border border-primary/25"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-yellow-500/5" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-transparent" />
               <div className="relative z-10">
                 <div className="w-10 h-10 rounded-xl gradient-cyan-accent flex items-center justify-center mb-4 shadow-neon-sm">
                   <Zap className="w-4 h-4 text-background" strokeWidth={2.2} />

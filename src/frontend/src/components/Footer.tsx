@@ -1,4 +1,5 @@
-import { Zap } from "lucide-react";
+import { Mail, Zap } from "lucide-react";
+import { ReactionBar } from "@/components/ReactionBar";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
@@ -67,6 +68,14 @@ export function Footer() {
             {/* Social links */}
             <div className="flex items-center gap-3">
               <a
+                href="mailto:malleshmudavath449@gmail.com"
+                className="w-9 h-9 rounded-lg glass border border-border/20 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/30 hover:bg-primary/5 transition-smooth"
+                aria-label="Gmail"
+                data-ocid="footer-gmail"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+              <a
                 href="https://github.com/Mallesh-5577"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -114,8 +123,20 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-border/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <p>© {YEAR} MNSCC Web Studio. All rights reserved.</p>
+        <div className="border-t border-border/20 pt-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-3 text-xs text-muted-foreground">
+          <p className="text-center sm:text-left">
+            © {YEAR} MNSCC Web Studio. All rights reserved.
+          </p>
+          <a
+            href="tel:+918977259147"
+            className="justify-self-center hover:text-foreground transition-colors duration-200"
+            data-ocid="footer-contact-support"
+          >
+            Contact Support: +91 8977259147
+          </a>
+          <div className="justify-self-center sm:justify-self-end">
+            <ReactionBar />
+          </div>
         </div>
       </div>
     </footer>

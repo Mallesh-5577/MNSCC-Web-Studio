@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { CheckCircle2, Mail, MessageCircle, Send } from "lucide-react";
 import { motion } from "motion/react";
@@ -10,6 +17,8 @@ interface FormState {
   name: string;
   email: string;
   phone: string;
+  websiteType: string;
+  otherWebsiteName: string;
   message: string;
 }
 
@@ -17,6 +26,8 @@ interface FieldErrors {
   name?: string;
   email?: string;
   phone?: string;
+  websiteType?: string;
+  otherWebsiteName?: string;
   message?: string;
 }
 
@@ -27,6 +38,10 @@ function validate(form: FormState): FieldErrors {
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
     errors.email = "Invalid email address";
   if (!form.phone.trim()) errors.phone = "Phone number is required";
+  if (!form.websiteType.trim()) errors.websiteType = "Please choose a website type";
+  if (form.websiteType === "Others" && !form.otherWebsiteName.trim()) {
+    errors.otherWebsiteName = "Please enter your website type";
+  }
   if (!form.message.trim()) errors.message = "Message is required";
   else if (form.message.trim().length < 20)
     errors.message = "Please provide more detail (20+ chars)";
@@ -38,6 +53,8 @@ export function Contact() {
     name: "",
     email: "",
     phone: "",
+    websiteType: "",
+    otherWebsiteName: "",
     message: "",
   });
   const [errors, setErrors] = useState<FieldErrors>({});
@@ -70,6 +87,9 @@ export function Contact() {
           name: form.name,
           email: form.email,
           phone: form.phone,
+          website_type: form.websiteType,
+          other_website_name:
+            form.websiteType === "Others" ? form.otherWebsiteName : "",
           message: form.message,
           subject: `New Project Inquiry from ${form.name}`,
           from_name: "MNSCC Web Studio Website",
@@ -226,7 +246,14 @@ export function Contact() {
                   className="mt-6 border-border/40 hover:border-primary/40 transition-smooth"
                   onClick={() => {
                     setSubmitted(false);
-                    setForm({ name: "", email: "", phone: "", message: "" });
+                    setForm({
+                      name: "",
+                      email: "",
+                      phone: "",
+                      websiteType: "",
+                      otherWebsiteName: "",
+                      message: "",
+                    });
                   }}
                 >
                   Send Another Message
@@ -313,6 +340,82 @@ export function Contact() {
 
                 <div className="space-y-1.5">
                   <Label
+                    htmlFor="websiteType"
+                    className="text-sm font-medium text-foreground"
+                  >
+                    Type of Website
+                  </Label>
+                  <Select
+                    value={form.websiteType}
+                    onValueChange={(value) => {
+                      setForm((f) => ({
+                        ...f,
+                        websiteType: value,
+                        otherWebsiteName:
+                          value === "Others" ? f.otherWebsiteName : "",
+                      }));
+                      setErrors((prev) => ({
+                        ...prev,
+                        websiteType: undefined,
+                        otherWebsiteName:
+                          value === "Others" ? prev.otherWebsiteName : undefined,
+                      }));
+                    }}
+                  >
+                    <SelectTrigger
+                      id="websiteType"
+                      onBlur={() => handleBlur("websiteType")}
+                      className="w-full bg-muted/40 border-border/30 focus:border-primary/50"
+                      data-ocid="contact-input-website-type"
+                    >
+                      <SelectValue placeholder="Select website type" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-card border-border/30">
+                      <SelectItem value="Business Website">Business Website</SelectItem>
+                      <SelectItem value="E-Commerce Website">E-Commerce Website</SelectItem>
+                      <SelectItem value="Portfolio Website">Portfolio Website</SelectItem>
+                      <SelectItem value="Landing Page">Landing Page</SelectItem>
+                      <SelectItem value="Blog/News Website">Blog/News Website</SelectItem>
+                      <SelectItem value="Custom Web App">Custom Web App</SelectItem>
+                      <SelectItem value="Others">Others</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  {errors.websiteType && (
+                    <p className="text-xs text-destructive">{errors.websiteType}</p>
+                  )}
+                </div>
+
+                {form.websiteType === "Others" && (
+                  <div className="space-y-1.5">
+                    <Label
+                      htmlFor="otherWebsiteName"
+                      className="text-sm font-medium text-foreground"
+                    >
+                      Your Website Type
+                    </Label>
+                    <Input
+                      id="otherWebsiteName"
+                      type="text"
+                      placeholder="Enter your website type"
+                      value={form.otherWebsiteName}
+                      onChange={(e) =>
+                        setForm((f) => ({
+                          ...f,
+                          otherWebsiteName: e.target.value,
+                        }))
+                      }
+                      onBlur={() => handleBlur("otherWebsiteName")}
+                      className="bg-muted/40 border-border/30 focus:border-primary/50 transition-smooth"
+                      data-ocid="contact-input-other-website-type"
+                    />
+                    {errors.otherWebsiteName && (
+                      <p className="text-xs text-destructive">{errors.otherWebsiteName}</p>
+                    )}
+                  </div>
+                )}
+
+                <div className="space-y-1.5">
+                  <Label
                     htmlFor="message"
                     className="text-sm font-medium text-foreground"
                   >
@@ -320,7 +423,7 @@ export function Contact() {
                   </Label>
                   <Textarea
                     id="message"
-                    placeholder="I need a business website with e-commerce functionality..."
+                    placeholder="Ex... I need a business website with e-commerce functionality..."
                     value={form.message}
                     onChange={(e) =>
                       setForm((f) => ({ ...f, message: e.target.value }))

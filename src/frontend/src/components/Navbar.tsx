@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ReactionBar } from "@/components/ReactionBar";
 import type { NavLink } from "@/types";
 import { Menu, X, Zap } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -87,6 +88,7 @@ export function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <ReactionBar />
             <Button
               onClick={() => handleNavClick("#contact")}
               className="gradient-cyan-accent text-background font-semibold shadow-neon-sm hover:shadow-neon transition-smooth hover:-translate-y-0.5"
