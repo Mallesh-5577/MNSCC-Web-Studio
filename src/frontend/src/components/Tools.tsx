@@ -99,6 +99,14 @@ const SERVICES: Service[] = [
     icon: "☁️",
     tech: "Hosting",
   },
+  {
+    id: "vercel",
+    title: "Vercel",
+    description:
+      "Lightning-fast frontend deployments with edge delivery, previews, and seamless CI/CD workflows.",
+    icon: "▲",
+    tech: "Hosting",
+  },
 ];
 
 function ServiceCard({ service, index }: { service: Service; index: number }) {
