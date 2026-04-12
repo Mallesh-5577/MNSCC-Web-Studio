@@ -127,16 +127,16 @@ export function Footer() {
           <p className="text-center sm:text-left">
             © {YEAR} MNSCC Web Studio. All rights reserved.
           </p>
+          <div className="justify-self-center">
+            <ReactionBar />
+          </div>
           <a
             href="tel:+918977259147"
-            className="justify-self-center hover:text-foreground transition-colors duration-200"
+            className="justify-self-center sm:justify-self-end hover:text-foreground transition-colors duration-200"
             data-ocid="footer-contact-support"
           >
             Contact Support: +91 8977259147
           </a>
-          <div className="justify-self-center sm:justify-self-end">
-            <ReactionBar />
-          </div>
         </div>
       </div>
     </footer>

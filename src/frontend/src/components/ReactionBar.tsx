@@ -244,11 +244,11 @@ export function ReactionBar({ className }: ReactionBarProps) {
       data-ocid="reaction-bar"
     >
       <span
-        className="inline-flex min-w-14 items-center justify-center gap-1 rounded-md border border-border/30 bg-card/70 px-2 py-1.5"
+        className="inline-flex min-w-20 items-center justify-center gap-1 rounded-md border border-border/30 bg-card/70 px-2 py-1.5"
         title="Total views"
       >
         <Eye className="h-3.5 w-3.5" />
-        <span className="font-semibold tabular-nums">{counts.views}</span>
+        <span className="font-semibold tabular-nums">Views {counts.views}</span>
       </span>
 
       <button
@@ -256,7 +256,7 @@ export function ReactionBar({ className }: ReactionBarProps) {
         onClick={() => void submitReactionOnce("like")}
         disabled={choice !== null}
         className={cn(
-          "inline-flex min-w-14 items-center justify-center gap-1 rounded-md border border-border/30 bg-card/70 px-2 py-1.5 transition-colors hover:text-foreground",
+          "inline-flex min-w-20 items-center justify-center gap-1 rounded-md border border-border/30 bg-card/70 px-2 py-1.5 transition-colors hover:text-foreground",
           choice === "like"
             ? "text-green-300"
             : "",
@@ -268,7 +268,7 @@ export function ReactionBar({ className }: ReactionBarProps) {
         data-ocid="reaction-like"
       >
         <ThumbsUp className="h-3.5 w-3.5" />
-        <span className="font-semibold tabular-nums">{counts.likes}</span>
+        <span className="font-semibold tabular-nums">Likes {counts.likes}</span>
       </button>
 
       <button
@@ -276,7 +276,7 @@ export function ReactionBar({ className }: ReactionBarProps) {
         onClick={() => void submitReactionOnce("dislike")}
         disabled={choice !== null}
         className={cn(
-          "inline-flex min-w-14 items-center justify-center gap-1 rounded-md border border-border/30 bg-card/70 px-2 py-1.5 transition-colors hover:text-foreground",
+          "inline-flex min-w-20 items-center justify-center gap-1 rounded-md border border-border/30 bg-card/70 px-2 py-1.5 transition-colors hover:text-foreground",
           choice === "dislike"
             ? "text-red-300"
             : "",
@@ -288,7 +288,7 @@ export function ReactionBar({ className }: ReactionBarProps) {
         data-ocid="reaction-dislike"
       >
         <ThumbsDown className="h-3.5 w-3.5" />
-        <span className="font-semibold tabular-nums">{counts.dislikes}</span>
+        <span className="font-semibold tabular-nums">Dislikes {counts.dislikes}</span>
       </button>
     </div>
   );
