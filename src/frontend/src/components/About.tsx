@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Heart, Lightbulb, Rocket } from "lucide-react";
+import { ArrowRight, Code2, Heart, Lightbulb, Rocket, Zap } from "lucide-react";
 import { motion } from "motion/react";
 
 function scrollToSection(id: string) {
@@ -92,9 +92,38 @@ export function About() {
               <div className="absolute top-0 left-0 right-0 h-0.5 gradient-cyan-accent opacity-60" />
             </div>
 
+            {/* Delivery highlight card to fill the left-side space */}
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.12 }}
+              className="glass-card mt-6 relative overflow-hidden border border-yellow-500/25"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-yellow-500/5" />
+              <div className="relative z-10">
+                <div className="w-10 h-10 rounded-xl gradient-cyan-accent flex items-center justify-center mb-4 shadow-neon-sm">
+                  <Zap className="w-4 h-4 text-background" strokeWidth={2.2} />
+                </div>
+
+                <h4 className="font-display text-lg font-bold text-foreground mb-3">
+                  Fast Delivery
+                </h4>
+
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  <span className="font-semibold text-foreground">Mini websites</span>{" "}
+                  delivered in <span className="font-semibold text-foreground">2-4 days</span>.
+                  <br />
+                  <span className="font-semibold text-foreground">Major websites</span>{" "}
+                  delivered in <span className="font-semibold text-foreground">4-6 days</span> based
+                  on client requirements.
+                </p>
+              </div>
+            </motion.div>
+
             {/* Floating metric cards */}
             <motion.div
-              className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 border border-primary/20"
+              className="absolute -bottom-16 -right-4 glass rounded-xl px-4 py-3 border border-primary/20"
               animate={{ y: [0, -8, 0] }}
               transition={{
                 duration: 3,
@@ -108,21 +137,6 @@ export function About() {
               <div className="text-xs text-muted-foreground">
                 Client Satisfaction
               </div>
-            </motion.div>
-            <motion.div
-              className="absolute -top-4 -right-4 glass rounded-xl px-4 py-3 border border-secondary/20"
-              animate={{ y: [0, 8, 0] }}
-              transition={{
-                duration: 4,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-                delay: 1,
-              }}
-            >
-              <div className="font-display text-xl font-bold gradient-text-cyan">
-                48h
-              </div>
-              <div className="text-xs text-muted-foreground">Avg. Delivery</div>
             </motion.div>
           </motion.div>
 

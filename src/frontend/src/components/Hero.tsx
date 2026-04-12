@@ -207,7 +207,7 @@ export function Hero() {
           {[
             { value: "15+", label: "Projects Delivered" },
             { value: "100%", label: "Client Satisfaction" },
-            { value: "48h", label: "Average Turnaround" },
+            { value: "4days", label: "Average Turnaround" },
             { value: "5★", label: "Quality Rating" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

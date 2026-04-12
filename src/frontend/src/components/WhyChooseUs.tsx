@@ -27,7 +27,7 @@ const WHY_ITEMS: (WhyItem & {
     id: "fast",
     title: "Fast Delivery",
     description:
-      "Most projects delivered in 3–7 days. We work efficiently without cutting corners on quality or performance.",
+      "Mini websites delivered in 2-4 days. Major websites delivered in 4-6 days based on client requirements.",
     icon: "zap",
     IconComponent: Zap,
     color: "from-yellow-500/20 to-yellow-500/5",
@@ -88,9 +88,24 @@ function WhyCard({
         <h3 className="font-display text-lg font-bold text-foreground mb-2">
           {item.title}
         </h3>
-        <p className="text-muted-foreground text-sm leading-relaxed">
-          {item.description}
-        </p>
+        {item.id === "fast" ? (
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            <span className="font-semibold text-foreground">
+              Mini websites
+            </span>{" "}
+            delivered in <span className="font-semibold text-foreground">2-4 days</span>.
+            <br />
+            <span className="font-semibold text-foreground">
+              Major websites
+            </span>{" "}
+            delivered in <span className="font-semibold text-foreground">4-6 days</span> based on
+            client requirements.
+          </p>
+        ) : (
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            {item.description}
+          </p>
+        )}
       </div>
     </motion.div>
   );
