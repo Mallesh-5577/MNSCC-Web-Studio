@@ -42,9 +42,13 @@ const FooterSection = lazy(() =>
 );
 
 export default function App() {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return sessionStorage.getItem("mnscc-loader-seen-v1") === "1";
+  });
 
   const handleLoadComplete = useCallback(() => {
+    sessionStorage.setItem("mnscc-loader-seen-v1", "1");
     setLoaded(true);
   }, []);
 

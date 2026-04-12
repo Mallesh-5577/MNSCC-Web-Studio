@@ -46,6 +46,12 @@ export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const isMobile = window.innerWidth < 768;
+    if (prefersReducedMotion || isMobile) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -62,7 +68,7 @@ export function Hero() {
       size: number;
       alpha: number;
     }[] = [];
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < 36; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,

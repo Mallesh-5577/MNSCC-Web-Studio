@@ -9,7 +9,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const steps = [20, 45, 70, 90, 100];
+    const steps = [40, 75, 100];
     let stepIndex = 0;
 
     const interval = setInterval(() => {
@@ -20,10 +20,10 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
         clearInterval(interval);
         setTimeout(() => {
           setFadeOut(true);
-          setTimeout(onComplete, 500);
-        }, 300);
+          setTimeout(onComplete, 220);
+        }, 120);
       }
-    }, 300);
+    }, 140);
 
     return () => clearInterval(interval);
   }, [onComplete]);
