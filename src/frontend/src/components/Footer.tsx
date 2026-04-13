@@ -1,5 +1,4 @@
 import { Mail, Zap } from "lucide-react";
-import { ReactionBar } from "@/components/ReactionBar";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 
@@ -123,13 +122,10 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-border/20 pt-6 grid grid-cols-1 sm:grid-cols-3 items-center gap-3 text-xs text-muted-foreground">
+        <div className="border-t border-border/20 pt-6 grid grid-cols-1 sm:grid-cols-2 items-center gap-3 text-xs text-muted-foreground">
           <p className="text-center sm:text-left">
             © {YEAR} MNSCC Web Studio. All rights reserved.
           </p>
-          <div className="justify-self-center">
-            <ReactionBar />
-          </div>
           <a
             href="tel:+918977259147"
             className="justify-self-center sm:justify-self-end hover:text-foreground transition-colors duration-200"
