@@ -61,7 +61,7 @@ export function Navbar() {
             data-ocid="nav-logo"
           >
             <img
-              src="/logo.png"
+              src="/image.png"
               alt="MNSCC Web Studio"
               className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />{" "}

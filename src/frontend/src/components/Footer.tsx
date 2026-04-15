@@ -55,7 +55,7 @@ export function Footer() {
               aria-label="MNSCC Web Studio — back to top"
             >
               <img
-                src="/logo.png"
+                src="/image.png"
                 alt="MNSCC Web Studio Logo"
                 className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
