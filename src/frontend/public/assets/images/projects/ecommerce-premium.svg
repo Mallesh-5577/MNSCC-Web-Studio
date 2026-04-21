@@ -1,0 +1,46 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070E1D"/>
+      <stop offset="1" stop-color="#0B1327"/>
+    </linearGradient>
+    <linearGradient id="card" x1="110" y1="90" x2="860" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101C34"/>
+      <stop offset="1" stop-color="#0C172D"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="160" y1="200" x2="620" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="1020" cy="130" r="250" fill="#22D3EE" opacity="0.12"/>
+  <circle cx="130" cy="690" r="200" fill="#2563EB" opacity="0.14"/>
+
+  <rect x="90" y="70" width="1020" height="610" rx="30" fill="url(#card)" stroke="#223251"/>
+  <rect x="130" y="110" width="940" height="78" rx="16" fill="#12213E"/>
+  <rect x="158" y="133" width="160" height="32" rx="16" fill="#1D4ED8"/>
+  <rect x="840" y="126" width="200" height="46" rx="23" fill="#243758"/>
+  <circle cx="896" cy="149" r="7" fill="#7DD3FC"/>
+  <rect x="914" y="142" width="96" height="14" rx="7" fill="#C6D6EF" opacity="0.78"/>
+
+  <rect x="130" y="215" width="530" height="420" rx="24" fill="url(#hero)"/>
+  <rect x="700" y="215" width="370" height="198" rx="20" fill="#172744"/>
+  <rect x="700" y="437" width="370" height="198" rx="20" fill="#172744"/>
+
+  <rect x="735" y="255" width="115" height="115" rx="14" fill="#283C5F"/>
+  <rect x="872" y="255" width="160" height="24" rx="12" fill="#3D5579"/>
+  <rect x="872" y="291" width="120" height="18" rx="9" fill="#324867"/>
+  <rect x="872" y="323" width="80" height="30" rx="15" fill="#22D3EE"/>
+
+  <rect x="735" y="477" width="115" height="115" rx="14" fill="#283C5F"/>
+  <rect x="872" y="477" width="160" height="24" rx="12" fill="#3D5579"/>
+  <rect x="872" y="513" width="120" height="18" rx="9" fill="#324867"/>
+  <rect x="872" y="545" width="80" height="30" rx="15" fill="#22D3EE"/>
+
+  <text x="158" y="160" fill="#E6EEFA" font-size="17" font-family="Segoe UI, Arial, sans-serif">E-COMMERCE EXPERIENCE</text>
+  <text x="178" y="345" fill="#EBF8FF" font-size="66" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Online Fashion</text>
+  <text x="178" y="398" fill="#D5E7FF" font-size="36" font-family="Segoe UI, Arial, sans-serif">Storefront</text>
+  <text x="178" y="455" fill="#D3E5FF" font-size="24" font-family="Segoe UI, Arial, sans-serif">Catalog, cart, checkout and clean UX</text>
+</svg>

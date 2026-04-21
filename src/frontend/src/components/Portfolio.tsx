@@ -7,63 +7,31 @@ import { motion } from "motion/react";
 const PROJECTS: Project[] = [
   {
     id: "ecommerce",
-    title: "NeonShop — E-Commerce",
-    description:
-      "A sleek fashion e-commerce store with product filtering, cart, and Stripe checkout. Built for conversion.",
-    image: "/assets/generated/project-ecommerce.dim_800x500.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "#portfolio",
+    title: "E-Commerce",
+    description: "Open the live e-commerce project.",
+    image: "/assets/images/projects/ecommerce-premium.svg",
+    tags: ["Live Demo"],
+    liveUrl: "https://mallesh-5577.github.io/E-Commerce-Website-for-Online-Shopping/",
     category: "E-Commerce",
   },
   {
-    id: "saas",
-    title: "Orbital SaaS Dashboard",
-    description:
-      "Analytics and project management SaaS with real-time charts, team roles, and subscription billing.",
-    image: "/assets/generated/project-saas.dim_800x500.jpg",
-    tags: ["React", "TypeScript", "REST API", "Charts"],
-    liveUrl: "#portfolio",
-    category: "SaaS",
-  },
-  {
-    id: "agency",
-    title: "CyberBank — FinTech UI",
-    description:
-      "Modern banking dashboard UI with transaction history, spending analytics, and dark/light theme.",
-    image: "/assets/generated/project-agency.dim_800x500.jpg",
-    tags: ["React", "Tailwind", "Figma", "Motion"],
-    liveUrl: "#portfolio",
-    category: "FinTech",
-  },
-  {
-    id: "restaurant",
-    title: "FlavorNest — Restaurant",
-    description:
-      "Full-featured restaurant website with online ordering, menu management, and table reservations.",
-    image: "/assets/generated/project-restaurant.dim_800x500.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Maps"],
-    liveUrl: "#portfolio",
-    category: "Business",
-  },
-  {
-    id: "startup",
-    title: "LaunchPad — Startup Site",
-    description:
-      "High-converting startup landing page with waitlist signup, investor deck download, and blog.",
-    image: "/assets/generated/project-startup.dim_800x500.jpg",
-    tags: ["React", "TypeScript", "Email API", "SEO"],
-    liveUrl: "#portfolio",
-    category: "Startup",
-  },
-  {
-    id: "portfolio-demo",
-    title: "PixelCraft — Portfolio",
-    description:
-      "Award-winning designer portfolio with 3D hover effects, case study pages, and contact form.",
-    image: "/assets/generated/project-portfolio.dim_800x500.jpg",
-    tags: ["React", "Motion", "Three.js", "GSAP"],
-    liveUrl: "#portfolio",
+    id: "portfolio",
+    title: "Portfolio",
+    description: "Open the live portfolio project.",
+    image: "/assets/images/projects/portfolio-premium.svg",
+    tags: ["Live Demo"],
+    liveUrl: "https://mallesh-5577.github.io/Mallesh-Portfolio/",
     category: "Portfolio",
+  },
+  {
+    id: "expiry-tracker",
+    title: "Product Expiry Tracker (Mini Project)",
+    description: "Open the live product expiry tracker project.",
+    image: "/assets/images/projects/expiry-tracker-premium.svg",
+    tags: ["Live Demo"],
+    liveUrl:
+      "https://product-expiry-tracker-57-8nh1zhc89-mallesh-5577s-projects.vercel.app/",
+    category: "Mini Project",
   },
 ];
 
