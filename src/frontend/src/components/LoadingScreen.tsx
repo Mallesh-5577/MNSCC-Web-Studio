@@ -45,7 +45,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
       {/* Brand Logo */}
       <div className="relative mb-6 flex items-center justify-center animate-pulse">
         <img
-          src="/logo.png"
+          src="/image.png"
           alt="MNSCC Web Studio Logo"
           className="h-16 sm:h-20 w-auto object-contain drop-shadow-xl"
         />
