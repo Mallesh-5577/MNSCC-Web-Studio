@@ -9,7 +9,8 @@ const PROJECTS: Project[] = [
     id: "ecommerce",
     title: "E-Commerce",
     description: "Open the live e-commerce project.",
-    image: "/assets/images/projects/ecommerce-premium.svg",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80",
     tags: ["Live Demo"],
     liveUrl: "https://mallesh-5577.github.io/E-Commerce-Website-for-Online-Shopping/",
     category: "E-Commerce",
@@ -18,7 +19,8 @@ const PROJECTS: Project[] = [
     id: "portfolio",
     title: "Portfolio",
     description: "Open the live portfolio project.",
-    image: "/assets/images/projects/portfolio-premium.svg",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     tags: ["Live Demo"],
     liveUrl: "https://mallesh-5577.github.io/Mallesh-Portfolio/",
     category: "Portfolio",
@@ -27,7 +29,8 @@ const PROJECTS: Project[] = [
     id: "expiry-tracker",
     title: "Product Expiry Tracker (Mini Project)",
     description: "Open the live product expiry tracker project.",
-    image: "/assets/images/projects/expiry-tracker-premium.svg",
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     tags: ["Live Demo"],
     liveUrl:
       "https://product-expiry-tracker-57.vercel.app/",
