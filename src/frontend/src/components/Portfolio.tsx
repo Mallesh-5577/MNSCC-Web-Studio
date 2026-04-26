@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     image: "/assets/images/projects/expiry-tracker-premium.svg",
     tags: ["Live Demo"],
     liveUrl:
-      "https://product-expiry-tracker-57-8nh1zhc89-mallesh-5577s-projects.vercel.app/",
+      "https://product-expiry-tracker-57.vercel.app/",
     category: "Mini Project",
   },
 ];
