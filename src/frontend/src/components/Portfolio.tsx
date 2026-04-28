@@ -36,6 +36,15 @@ const PROJECTS: Project[] = [
       "https://product-expiry-tracker-57.vercel.app/",
     category: "Mini Project",
   },
+  {
+    id: "iraa-restaurant",
+    title: "IRAA Restaurant",
+    description: "Open the live restaurant demo based on the IRAA Restaurant site.",
+    image: "/assets/image.png",
+    tags: ["Live Demo"],
+    liveUrl: "https://restaurant-website-omega-five-49.vercel.app",
+    category: "Restaurant",
+  },
 ];
 
 function handleDemoClick(liveUrl: string) {
