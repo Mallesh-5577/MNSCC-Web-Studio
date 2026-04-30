@@ -1,5 +1,5 @@
-import { c as createLucideIcon, j as jsxRuntimeExports, S as Slot, a as cn, b as cva, B as Button } from "./index-BARfDWsz.js";
-import { m as motion } from "./proxy-BJ8T8B36.js";
+import { c as createLucideIcon, j as jsxRuntimeExports, S as Slot, a as cn, b as cva, B as Button } from "./index-CsAPa9Tv.js";
+import { m as motion } from "./proxy-qFm2k5Mj.js";
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -47,57 +47,30 @@ function Badge({
 const PROJECTS = [
   {
     id: "ecommerce",
-    title: "NeonShop — E-Commerce",
-    description: "A sleek fashion e-commerce store with product filtering, cart, and Stripe checkout. Built for conversion.",
-    image: "/assets/generated/project-ecommerce.dim_800x500.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "#portfolio",
+    title: "E-Commerce",
+    description: "Open the live e-commerce project.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Live Demo"],
+    liveUrl: "https://mallesh-5577.github.io/E-Commerce-Website-for-Online-Shopping/",
     category: "E-Commerce"
   },
   {
-    id: "saas",
-    title: "Orbital SaaS Dashboard",
-    description: "Analytics and project management SaaS with real-time charts, team roles, and subscription billing.",
-    image: "/assets/generated/project-saas.dim_800x500.jpg",
-    tags: ["React", "TypeScript", "REST API", "Charts"],
-    liveUrl: "#portfolio",
-    category: "SaaS"
-  },
-  {
-    id: "agency",
-    title: "CyberBank — FinTech UI",
-    description: "Modern banking dashboard UI with transaction history, spending analytics, and dark/light theme.",
-    image: "/assets/generated/project-agency.dim_800x500.jpg",
-    tags: ["React", "Tailwind", "Figma", "Motion"],
-    liveUrl: "#portfolio",
-    category: "FinTech"
-  },
-  {
-    id: "restaurant",
-    title: "FlavorNest — Restaurant",
-    description: "Full-featured restaurant website with online ordering, menu management, and table reservations.",
-    image: "/assets/generated/project-restaurant.dim_800x500.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Maps"],
-    liveUrl: "#portfolio",
-    category: "Business"
-  },
-  {
-    id: "startup",
-    title: "LaunchPad — Startup Site",
-    description: "High-converting startup landing page with waitlist signup, investor deck download, and blog.",
-    image: "/assets/generated/project-startup.dim_800x500.jpg",
-    tags: ["React", "TypeScript", "Email API", "SEO"],
-    liveUrl: "#portfolio",
-    category: "Startup"
-  },
-  {
-    id: "portfolio-demo",
-    title: "PixelCraft — Portfolio",
-    description: "Award-winning designer portfolio with 3D hover effects, case study pages, and contact form.",
-    image: "/assets/generated/project-portfolio.dim_800x500.jpg",
-    tags: ["React", "Motion", "Three.js", "GSAP"],
-    liveUrl: "#portfolio",
+    id: "portfolio",
+    title: "Portfolio",
+    description: "Open the live portfolio project.",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Live Demo"],
+    liveUrl: "https://mallesh-5577.github.io/Mallesh-Portfolio/",
     category: "Portfolio"
+  },
+  {
+    id: "iraa-restaurant",
+    title: "IRAA Restaurant",
+    description: "Open the live restaurant demo based on the IRAA Restaurant site.",
+    image: "/assets/image.png",
+    tags: ["Live Demo"],
+    liveUrl: "https://restaurant-website-omega-five-49.vercel.app",
+    category: "Restaurant"
   }
 ];
 function handleDemoClick(liveUrl) {

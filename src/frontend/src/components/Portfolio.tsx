@@ -26,17 +26,6 @@ const PROJECTS: Project[] = [
     category: "Portfolio",
   },
   {
-    id: "expiry-tracker",
-    title: "Product Expiry Tracker (Mini Project)",
-    description: "Open the live product expiry tracker project.",
-    image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Live Demo"],
-    liveUrl:
-      "https://product-expiry-tracker-green.vercel.app/",
-    category: "Mini Project",
-  },
-  {
     id: "iraa-restaurant",
     title: "IRAA Restaurant",
     description: "Open the live restaurant demo based on the IRAA Restaurant site.",

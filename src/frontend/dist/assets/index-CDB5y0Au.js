@@ -1,4 +1,4 @@
-import { R as React2 } from "./index-BARfDWsz.js";
+import { R as React2 } from "./index-CsAPa9Tv.js";
 var DefaultContext = {
   color: void 0,
   size: void 0,

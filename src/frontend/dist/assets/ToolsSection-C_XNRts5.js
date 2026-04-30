@@ -1,6 +1,6 @@
-import { j as jsxRuntimeExports } from "./index-BARfDWsz.js";
-import { S as SiGithub } from "./index-CPwbbpj4.js";
-import { m as motion } from "./proxy-BJ8T8B36.js";
+import { j as jsxRuntimeExports } from "./index-CsAPa9Tv.js";
+import { S as SiGithub } from "./index-CDB5y0Au.js";
+import { m as motion } from "./proxy-qFm2k5Mj.js";
 const SERVICES = [
   {
     id: "html",

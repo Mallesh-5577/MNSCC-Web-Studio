@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/HeroSection-C2UXlDq_.js","assets/proxy-BJ8T8B36.js","assets/arrow-right-DZ_BbJgR.js","assets/AboutSection-DMwP6dfd.js","assets/zap-C3URetTA.js","assets/rocket-Pds4DBlg.js","assets/ToolsSection-DnEnwQl4.js","assets/index-CPwbbpj4.js","assets/WebsiteTypesSection-QB4FN_UE.js","assets/PortfolioSection-D5se-7OE.js","assets/WhyChooseUsSection-BoxWB8um.js","assets/TestimonialsSection-DInOzuLq.js","assets/ContactSection-CKHjQhCZ.js","assets/mail-DHAzRCXE.js","assets/FooterSection-OBlDDQT2.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/HeroSection-B9TY9LfY.js","assets/proxy-qFm2k5Mj.js","assets/arrow-right-BD-UwMmT.js","assets/AboutSection-CdAtgQSw.js","assets/zap-zZHChOJd.js","assets/rocket-BXLq07T7.js","assets/ToolsSection-C_XNRts5.js","assets/index-CDB5y0Au.js","assets/WebsiteTypesSection-BOcVuk9U.js","assets/PortfolioSection-CycSriRh.js","assets/WhyChooseUsSection-vy9wZNMn.js","assets/TestimonialsSection-3SrnxOQY.js","assets/ContactSection-CFpbccTR.js","assets/mail-DKoCPlS6.js","assets/FooterSection-Bbyr66M8.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __typeError = (msg) => {
   throw TypeError(msg);
@@ -18521,7 +18521,7 @@ function LoadingScreen({ onComplete }) {
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mb-6 flex items-center justify-center animate-pulse", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "img",
           {
-            src: "/logo.png",
+            src: "/image.png",
             alt: "MNSCC Web Studio Logo",
             className: "h-16 sm:h-20 w-auto object-contain drop-shadow-xl"
           }
@@ -21483,39 +21483,39 @@ function Navbar() {
   );
 }
 const HeroSection = reactExports.lazy(
-  () => __vitePreload(() => import("./HeroSection-C2UXlDq_.js"), true ? __vite__mapDeps([0,1,2]) : void 0).then((m) => ({ default: m.HeroSection }))
+  () => __vitePreload(() => import("./HeroSection-B9TY9LfY.js"), true ? __vite__mapDeps([0,1,2]) : void 0).then((m) => ({ default: m.HeroSection }))
 );
 const AboutSection = reactExports.lazy(
-  () => __vitePreload(() => import("./AboutSection-DMwP6dfd.js"), true ? __vite__mapDeps([3,1,4,5,2]) : void 0).then((m) => ({ default: m.AboutSection }))
+  () => __vitePreload(() => import("./AboutSection-CdAtgQSw.js"), true ? __vite__mapDeps([3,1,4,5,2]) : void 0).then((m) => ({ default: m.AboutSection }))
 );
 const ToolsSection = reactExports.lazy(
-  () => __vitePreload(() => import("./ToolsSection-DnEnwQl4.js"), true ? __vite__mapDeps([6,7,1]) : void 0).then((m) => ({ default: m.ToolsSection }))
+  () => __vitePreload(() => import("./ToolsSection-C_XNRts5.js"), true ? __vite__mapDeps([6,7,1]) : void 0).then((m) => ({ default: m.ToolsSection }))
 );
 const WebsiteTypesSection = reactExports.lazy(
-  () => __vitePreload(() => import("./WebsiteTypesSection-QB4FN_UE.js"), true ? __vite__mapDeps([8,1,5]) : void 0).then((m) => ({
+  () => __vitePreload(() => import("./WebsiteTypesSection-BOcVuk9U.js"), true ? __vite__mapDeps([8,1,5]) : void 0).then((m) => ({
     default: m.WebsiteTypesSection
   }))
 );
 const PortfolioSection = reactExports.lazy(
-  () => __vitePreload(() => import("./PortfolioSection-D5se-7OE.js"), true ? __vite__mapDeps([9,1]) : void 0).then((m) => ({
+  () => __vitePreload(() => import("./PortfolioSection-CycSriRh.js"), true ? __vite__mapDeps([9,1]) : void 0).then((m) => ({
     default: m.PortfolioSection
   }))
 );
 const WhyChooseUsSection = reactExports.lazy(
-  () => __vitePreload(() => import("./WhyChooseUsSection-BoxWB8um.js"), true ? __vite__mapDeps([10,1,4,2]) : void 0).then((m) => ({
+  () => __vitePreload(() => import("./WhyChooseUsSection-vy9wZNMn.js"), true ? __vite__mapDeps([10,1,4,2]) : void 0).then((m) => ({
     default: m.WhyChooseUsSection
   }))
 );
 const TestimonialsSection = reactExports.lazy(
-  () => __vitePreload(() => import("./TestimonialsSection-DInOzuLq.js"), true ? __vite__mapDeps([11,1]) : void 0).then((m) => ({
+  () => __vitePreload(() => import("./TestimonialsSection-3SrnxOQY.js"), true ? __vite__mapDeps([11,1]) : void 0).then((m) => ({
     default: m.TestimonialsSection
   }))
 );
 const ContactSection = reactExports.lazy(
-  () => __vitePreload(() => import("./ContactSection-CKHjQhCZ.js"), true ? __vite__mapDeps([12,1,13]) : void 0).then((m) => ({ default: m.ContactSection }))
+  () => __vitePreload(() => import("./ContactSection-CFpbccTR.js"), true ? __vite__mapDeps([12,1,13]) : void 0).then((m) => ({ default: m.ContactSection }))
 );
 const FooterSection = reactExports.lazy(
-  () => __vitePreload(() => import("./FooterSection-OBlDDQT2.js"), true ? __vite__mapDeps([14,7,13]) : void 0).then((m) => ({ default: m.FooterSection }))
+  () => __vitePreload(() => import("./FooterSection-Bbyr66M8.js"), true ? __vite__mapDeps([14,7,13]) : void 0).then((m) => ({ default: m.FooterSection }))
 );
 function App() {
   const [loaded, setLoaded] = reactExports.useState(() => {
