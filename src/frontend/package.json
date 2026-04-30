@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && pnpm copy:env",
-    "copy:env": "node -e \"require('node:fs').copyFileSync('env.json', 'dist/env.json')\"",
+    "build": "vite build && npm run copy:env",
+    "copy:env": "node -e \"const fs = require('node:fs'); fs.mkdirSync('dist', { recursive: true }); fs.copyFileSync('env.json', 'dist/env.json'); console.log('env.json copied to dist/');\"",
     "typecheck": "tsc --noEmit",
     "check": "biome check src",
     "fix": "biome check --write src"
