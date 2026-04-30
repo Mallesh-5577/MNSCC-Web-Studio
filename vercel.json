@@ -1,8 +1,6 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm --filter ./src/frontend build",
-  "installCommand": "pnpm install --frozen-lockfile",
+  "version": 2,
+  "buildCommand": "pnpm --filter @caffeine/template-frontend build",
   "outputDirectory": "src/frontend/dist",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "installCommand": "pnpm install --frozen-lockfile"
 }
