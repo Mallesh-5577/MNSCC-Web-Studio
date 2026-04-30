@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     tags: ["Live Demo"],
     liveUrl:
-      "https://product-expiry-tracker-57.vercel.app/",
+      "https://product-expiry-tracker-green.vercel.app/",
     category: "Mini Project",
   },
   {
