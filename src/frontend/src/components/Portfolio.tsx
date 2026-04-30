@@ -41,7 +41,7 @@ const PROJECTS: Project[] = [
     image: "/assets/pet.jpg",
     tags: ["Live Demo"],
     liveUrl: "https://product-expiry-tracker-green.vercel.app",
-    category: "Product Management",
+    category: "Mini Project",
   }
 ];
 
