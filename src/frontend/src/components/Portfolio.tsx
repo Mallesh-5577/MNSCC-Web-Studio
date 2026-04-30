@@ -34,6 +34,15 @@ const PROJECTS: Project[] = [
     liveUrl: "https://restaurant-website-omega-five-49.vercel.app",
     category: "Restaurant",
   },
+  {
+    id: "Product Expairy Tracker",
+    title: "Product Expiry Tracker",
+    description: "Open the live product expiry tracker project.",
+    image: "/assets/image.png",
+    tags: ["Live Demo"],
+    liveUrl: "https://product-expiry-tracker-green.vercel.app",
+    category: "Product Management",
+  }
 ];
 
 function handleDemoClick(liveUrl: string) {
