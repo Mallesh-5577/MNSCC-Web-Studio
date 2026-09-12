@@ -1,0 +1,5 @@
+# Exclude vendored Motoko package sources from GitHub language stats
+.mops/** linguist-vendored
+
+# Optional: if you want to fully hide backend Motoko from stats, uncomment below.
+# src/backend/**/*.mo linguist-vendored

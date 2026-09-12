@@ -1,0 +1,15 @@
+{
+  "name": "@caffeine/template-app",
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7.0.0",
+    "npm": "please use pnpm"
+  },
+  "scripts": {
+    "build": "pnpm --filter @caffeine/template-frontend build"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.4"
+  }
+}

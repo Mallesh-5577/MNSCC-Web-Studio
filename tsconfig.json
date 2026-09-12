@@ -1,0 +1,16 @@
+{
+  "include": ["src/frontend/src/**/*.ts", "src/frontend/src/**/*.tsx", "src/frontend/src/**/*.d.ts"],
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "bundler",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
+    "rootDir": ".",
+    "noEmit": true
+  }
+}
