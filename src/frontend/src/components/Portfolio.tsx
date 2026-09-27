@@ -23,7 +23,7 @@ const PROJECTS: Project[] = [
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     tags: ["Live Demo"],
-    liveUrl: "https://mallesh-5577.github.io/Mallesh-Portfolio/",
+    liveUrl: "https://mallesh-portfolio-1522.vercel.app/",
     category: "Portfolio",
   },
   {
